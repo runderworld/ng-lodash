@@ -4,17 +4,18 @@
   "description": "An Angular module wrapper for lodash",
   "main": "build/ng-lodash.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt dist"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/rockabox/ng-lodash.git"
   },
   "keywords": [
+    "nglodash",
     "angular",
     "lodash"
   ],
-  "author": "Rockabox <tech@rockabox.com>",
+  "author": ["Rockabox <tech@rockabox.com> (http://rockabox.com)"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rockabox/ng-lodash/issues"
