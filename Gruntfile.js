@@ -7,9 +7,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        'clean': {
-            'tmp': ['tmp']
-        },
         'jshint': {
             'src': [
                 './*.js',
@@ -55,17 +52,19 @@ module.exports = function (grunt) {
         'ngmin': {
             'dist': {
                 'src': 'build/ng-lodash.js',
-                'dest': 'tmp/ng-lodash.min.js'
+                'dest': 'build/ng-lodash.js'
             }
         },
         'uglify': {
             'dist': {
                 'options': {
-                    'compress': true,
+                    'compress': {
+                        unused: false
+                    },
                     'preserveComments': 'some'
                 },
                 'files': {
-                    'build/ng-lodash.min.js': 'tmp/ng-lodash.min.js'
+                    'build/ng-lodash.min.js': 'build/ng-lodash.js'
                 }
             }
         }
@@ -86,8 +85,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'lodash',
         'ngmin',
-        'uglify',
-        'clean:tmp'
+        'uglify'
     ]);
 
     // Registers a task to build and test ready for distribution
