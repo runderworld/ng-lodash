@@ -11,12 +11,27 @@ left on the window, and we use Lo-Dash with Angular, in the normal depenedency
  injection manner.
 
 ## Installing
+Install via bower
 
-```bower install ngLodash```
+```bower install ng-lodash```
 
-After loading Angular
+Require it into your application (after Angular)
 
 ```<script src="ng-lodash.min.js"></script>```
+
+Add the module as a dependency to your app
+
+```js
+var app = angular.module('yourAwesomeApp', ['ngLodash']);
+```
+
+And inject it into your controller like so!
+
+```js
+var YourCtrl = app.controller('yourController', function($scope, lodash) {
+  lodash..assign({ 'a': 1 }, { 'b': 2 }, { 'c': 3 });
+});
+```
 
 ## Developing
 
