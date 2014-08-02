@@ -29,7 +29,7 @@ And inject it into your controller like so!
 
 ```js
 var YourCtrl = app.controller('yourController', function($scope, lodash) {
-  lodash..assign({ 'a': 1 }, { 'b': 2 }, { 'c': 3 });
+  lodash.assign({ 'a': 1 }, { 'b': 2 }, { 'c': 3 });
 });
 ```
 
