@@ -6,9 +6,7 @@
         "while",
         "do",
         "try",
-        "catch",
-        "case",
-        "default"
+        "catch"
     ],
     "requireSpaceAfterKeywords": [
         "if",
@@ -68,7 +66,7 @@
         "<",
         "<="
     ],
-    "disallowLeftStickedOperators": [
+    "requireSpaceBeforeBinaryOperators": [
         "?",
         "=",
         "+",
@@ -84,7 +82,7 @@
         "<",
         "<="
     ],
-    "disallowRightStickedOperators": [
+    "requireSpaceAfterBinaryOperators": [
         "?",
         "=",
         "+",
@@ -98,9 +96,10 @@
         ">",
         ">=",
         "<",
-        "<="
+        "<=",
+        ","
     ],
-    "requireLeftStickedOperators": [","],
+    "disallowSpaceBeforeBinaryOperators": [","],
     "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
     "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
     "requireSpaceBeforeBinaryOperators": [
@@ -142,12 +141,13 @@
     "disallowTrailingWhitespace": true,
     "disallowTrailingComma": true,
     "disallowKeywordsOnNewLine": ["else"],
-    "maximumLineLength": 80,
+    "maximumLineLength": 120,
     "safeContextKeyword": ["$this"],
     "disallowYodaConditions": true,
     "validateJSDoc": {
         "checkParamNames": true,
         "checkRedundantParams": true,
         "requireParamTypes": true
-    }
+    },
+    "requireLineFeedAtFileEnd": true
 }
