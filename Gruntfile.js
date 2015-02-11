@@ -43,10 +43,10 @@ module.exports = function (grunt) {
                             '.config(function ($provide) { ' +
                                 '%output% ' +
                                 '$provide.constant(\'lodash\', _);' +
-                            '});',
-                'flags': [
-                    'debug'
-                ]
+                            '});'
+                // 'flags': [
+                //     'debug'
+                // ]
             }
         },
         'ngmin': {
