@@ -7,7 +7,7 @@ ng-lodash
 
 This is a wrapper for the utility library [Lo-Dash](http://lodash.com/) for
 Angular JS. One aim for this project is to ensure Lo-Dash doesn't have to be
-left on the window, and we use Lo-Dash with Angular, in the normal depenedency
+left on the window, and we use Lo-Dash with Angular, in the normal dependency
  injection manner.
 
 ## Installing
