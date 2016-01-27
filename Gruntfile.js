@@ -32,12 +32,7 @@ module.exports = function (grunt) {
                 'dest': 'build/ng-lodash.js'
             },
             'options': {
-                'modifier': 'modern',
-                'exports': [
-                    'amd',
-                    'commonjs',
-                    'node'
-                ],
+                'exports': ['amd'],
                 'iife': 'angular.module(\'ngLodash\', [])' +
                     '.constant(\'lodash\', null)' +
                     '.config(function ($provide) { ' +
